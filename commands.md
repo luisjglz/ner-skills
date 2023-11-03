@@ -15,5 +15,5 @@ prodigy train-curve --ner skills_correct --eval-split 0.2
 # Export dataset to annotated jsonl 
 python -m prodigy db-out skills > ner_skills.jsonl
 
-# Recipe for relation tagging
+# Recipe for relation tagging in prodigy
 prodigy rel.manual skills_rel blank:en dataset:skills --label KNOWS,HAS --wrap
